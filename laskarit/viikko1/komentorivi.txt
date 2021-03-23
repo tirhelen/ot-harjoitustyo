@@ -1,0 +1,10 @@
+kurssit
+└── ot2021
+    └── viikko1
+        ├── eka.txt
+        ├── kolmas.txt
+        ├── stuff
+        │   └── kissa.txt
+        └── tiedostoja
+            ├── file22.txt
+            └── file3.txt

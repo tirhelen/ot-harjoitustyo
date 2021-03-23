@@ -1,0 +1,132 @@
+commit 09f352dc1cfcbd8a18fadca08607707199c56a03
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 23:26:46 2021 +0200
+
+    poisto
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 410fb78b5107c080a98aa7a8b1604260c11063d0
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 23:20:11 2021 +0200
+
+    uudelleennimetty
+
+ tiedostoja/file22.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 4ba864b75e31d25f3a556bc0cdf7317a1343b800
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 23:18:04 2021 +0200
+
+    file3.txt
+
+ tiedostoja/file3.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 92c9e2e70444f702c8e7a2285e503a43aacf86ec
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 23:06:12 2021 +0200
+
+    kansiot lisätty
+
+ tiedostoja/file1.txt | 0
+ tiedostoja/file2.txt | 0
+ tiedostoja/file3.txt | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 579fea74545efe7ce352f467b6b20337921fbbb6
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 23:00:40 2021 +0200
+
+    muutoksiajee
+
+ eka.txt      |  60 +++++------------------------------
+ kolmas.txt   |   9 +++++-
+ tiedosto.txt | 101 -----------------------------------------------------------
+ 3 files changed, 15 insertions(+), 155 deletions(-)
+
+commit f4a3d595681a9bf798fbbdaa4aece0d62532bb00
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:56:37 2021 +0200
+
+    nimenmuutos
+
+ eka.txt | 101 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 101 insertions(+)
+
+commit 429a667ab64e4f634780b7f5c08be41b0c209b67
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:55:44 2021 +0200
+
+    poisto
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit b8cecd5fdd89c3ddaa98be5304da4d1dab6623ab
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:54:10 2021 +0200
+
+    muutokset tehty
+
+ tiedosto.txt | 16 +++++-----------
+ 1 file changed, 5 insertions(+), 11 deletions(-)
+
+commit c14afc443724ed29b756ce94be869957f02aa6eb
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:49:20 2021 +0200
+
+    paljon tekstia
+
+ tiedosto.txt | 106 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 106 insertions(+)
+
+commit 1a217d278270cb8a3f4345344b507a969eb6d483
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:44:56 2021 +0200
+
+    tiedosto ja hakemisto lisäys
+
+ stuff/kissa.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b4bfd5ca078a21def96e0d74bd0456b321d67a34
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:43:22 2021 +0200
+
+    muokkaus
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit a376e0ed341b18fe2c930bf89a4953ca60872708
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:41:51 2021 +0200
+
+    lisäys
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 716d5a644a136a8e844cec2c206d179a80c7ef8b
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:39:41 2021 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 5504ecff054013a172b1a2820d8ec5f38e1d750a
+Author: Helen Tirkkonen <helen.tirkkonen@helsinki.fi>
+Date:   Tue Mar 23 22:35:23 2021 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
