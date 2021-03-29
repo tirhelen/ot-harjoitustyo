@@ -9,5 +9,6 @@ __tämä on kursivoitu__
 ...
 
 [Vaativuusmäärittely](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
+ 
 [Työaikakirjanpito](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/ty%C3%B6aikakirjanpito.md)
 
