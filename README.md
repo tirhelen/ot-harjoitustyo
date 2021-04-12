@@ -1,14 +1,16 @@
-# tämä on otsikko
-tämä on tavallista tekstiä
-*tämä on lihavoitu*
-__tämä on kursivoitu__
+# Harry Styles-tasohyppely
+Pelissä ohjataan Harry Stylesiä, jonka täytyy kerätä hukkaamansa huivit ja etsiä tiensä lavan ovelle. Samalla hänen täytyy varoa Simon Cowellia.
 
 
-[gitlog.txt](https://github.com/tirhelen/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
-[komentorivi.txt](https://github.com/tirhelen/ot-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)
-...
-
+# Dokumentaatio
+ 
 [Vaativuusmäärittely](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
  
 [Työaikakirjanpito](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/ty%C3%B6aikakirjanpito.md)
+ 
+
+# Komentorivitoiminnot
+## Ohjelman suorittaminen
+Ohjelma suoritetaan komennolla:
+> poetry run invoke start
 
