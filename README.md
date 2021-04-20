@@ -8,9 +8,18 @@ Pelissä ohjataan Harry Stylesiä, jonka täytyy kerätä hukkaamansa huivit ja 
  
 [Työaikakirjanpito](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/ty%C3%B6aikakirjanpito.md)
  
+[Arkkitehtuuri](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md) 
 
 # Komentorivitoiminnot
 ## Ohjelman suorittaminen
 Ohjelma suoritetaan komennolla:
 > poetry run invoke start
+ 
+Testit suoritetaan komennolla:
+> poetry run invoke test
+ 
+Testikattavuusraportin näkee komennolla:
+> poetry run invoke coverage-report
 
+Pylint-tarkistukset näkee komennolla:
+> poetry run invoke lint
