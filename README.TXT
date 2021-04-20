@@ -1,1 +1,0 @@
-hetkonen nyt
