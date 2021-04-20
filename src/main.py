@@ -1,51 +1,38 @@
+import sys
 import pygame
-import os
-from harry import Harry
+from harry import Harry # pylint: disable=import-error
+from simon import Simon # pylint: disable=import-error
+from level1 import Map # pylint: disable=import-error
+from display import Display # pylint: disable=import-error
 
 def main():
-    pygame.init()
 
-    display_height = 1000
-    display_width = 1000
-    display = pygame.display.set_mode((display_width, display_height))
+    pygame.init() # pylint: disable=no-member
+    clock = pygame.time.Clock()
+    display = Display(1050,1050,"Harryn huivit häveyksissä")
+    pygame.display.set_caption(display.caption)
+    level = Map("level1..csv")
+    simon = Simon()
+    harry = Harry(level, simon, level.boa_group)
 
-    pygame.display.set_caption("Harryn huivit hävöksissä")
-    harry = Harry
     while True:
 
+        clock.tick(60)
         for event in pygame.event.get():
-            if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_RIGHT:
-                    harry.right = True
-                if event.key == pygame.K_LEFT:
-                    harry.left = True
+            if event.type == pygame.QUIT: # pylint: disable=no-member
+                sys.exit()
 
-            if event.type == pygame.KEYUP:
-                if event.key == pygame.K_RIGHT:
-                    harry.right = False
-                if event.key == pygame.K_LEFT:
-                    harry.left = False
-            if event.type == pygame.QUIT:
-                exit()
+        level.load_tiles()
+        harry.update()
+        display.display.fill((51, 51, 51))
 
-        if harry.right:
-            harry.move_right()
-        if harry.left:
-            harry.move_left()
-        
-        if harry.x < 0:
-            harry.x = 0
-        if harry.x > (display_width-harry.width):
-            harry.x = display_width-harry.width
-        if harry.y > (display_height-harry.height):
-            harry.y = display_height-harry.height
-        if harry.y < 0:
-            harry.y = 0
-        
-        display.fill((0,0,0))
-        display.blit(harry.image, (harry.x,harry.y))
-        
+        for tile in level.tiles:
+            display.display.blit(tile.image, (tile.rect.x, tile.rect.y))
+
+        display.display.blit(harry.image, (harry.rect.x, harry.rect.y))
+        display.display.blit(simon.image, (simon.rect.x, simon.rect.y))
+        level.boa_group.draw(display.display)
+        simon.move()
         pygame.display.flip()
-
 if __name__ == "__main__":
     main()
