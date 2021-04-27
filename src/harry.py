@@ -44,6 +44,7 @@ class Harry(pygame.sprite.Sprite):
         self.object_collisions(self.map)
         self.rect.x += self.dx
         self.rect.y += self.dy
+
     def wall_collisions(self, map):
         for tile in map.tiles:
             if tile.name == "platform.jpeg":
@@ -60,6 +61,8 @@ class Harry(pygame.sprite.Sprite):
     def object_collisions(self, map):
         self.check_backpack(map)
         #collides with boas
+        #jostain syystä ilmeisesti lukee törmäyksiksi myös, jos harry on x-suunnassa samassa kohtaa
+        #mutta y-suunnassa huivin/huivien alapuolella
         collided = pygame.sprite.spritecollide(self, map.boa_group, True, collided = None)
         for boa in collided:
             self.backpack.append(boa)

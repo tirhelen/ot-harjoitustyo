@@ -29,7 +29,7 @@ def main():
         level.door_group.draw(display.display)
         display.display.blit(level.simon.image, (level.simon.rect.x, level.simon.rect.y))
         display.display.blit(harry.image, (harry.rect.x, harry.rect.y))
-        #level.simon.move()
+        level.simon.move()
         pygame.display.flip()
 
 if __name__ == "__main__":
