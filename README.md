@@ -11,6 +11,8 @@ Pelissä ohjataan Harry Stylesiä, jonka täytyy kerätä hukkaamansa huivit ja 
 [Arkkitehtuuri](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md) 
 
 # Komentorivitoiminnot
+## Asenna riippuvuudet komennolla:
+> poetry install
 ## Ohjelman suorittaminen
 Ohjelma suoritetaan komennolla:
 > poetry run invoke start
