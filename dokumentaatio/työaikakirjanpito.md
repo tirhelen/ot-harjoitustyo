@@ -11,4 +11,7 @@
 |18.4  |1    |Tason lisäys käytännössä, huivit lisätty                 |
 |19.4. |2    |"Painovoima", hyppy lisätty, törmäysten käsittelyn alkua |
 |20.4  |2    |Seiniin törmäys korjattu, luokkakaavio, koodin siistintää|
-|yht.  |15,5 |                                                         |
+|24.4. |1    |Törmäysten käsittely                                     |
+|26.4. |1    |Törmäysten käsittely                                     |
+|27.4. |1    |Törmäysten käsittely lähes kuntoon, oven lisäys          |
+|yht.  |18,5 |                                                         |
