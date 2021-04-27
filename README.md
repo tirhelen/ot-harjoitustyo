@@ -1,6 +1,7 @@
 # Harry Styles-tasohyppely
 Pelissä ohjataan Harry Stylesiä, jonka täytyy kerätä hukkaamansa huivit ja etsiä tiensä lavan ovelle. Samalla hänen täytyy varoa Simon Cowellia.
 
+[Releaselinkki](https://github.com/tirhelen/ot-harjoitustyo/releases/tag/Viikko5)
 
 # Dokumentaatio
  
