@@ -9,17 +9,17 @@ Pelissä tarkoituksena on ohjata pelihahmoa, joka kerää esimerkiksi kolikoita 
 
 * Käynnistysvalikko: “ohjeet”-nappi, josta aukeaa ohjeet pelaamiseen ja “aloita peli”-nappi 
 
-* Pelihahmon liikuttaminen: oikealle, vasemmalle, hyppy (alas?) [TEHTY] 
+* Pelihahmon liikuttaminen: oikealle, vasemmalle, hyppy, painovoima alas [TEHTY] 
 
 * Pelikenttä:  
 
 	* tasoja, joiden päälle pelihahmo voi hypätä.  [TEHTY]
 
-	* Vihollisia / esteitä, joista pelihahmo kuolee/menettää voimia [Luotu, törmäystä ei vielä käsitellä] 
+	* Vihollisia / esteitä, joista pelihahmo kuolee/menettää voimia [TEHTY] 
 
-	* Päätepiste: portti/ovi/joku muu -> peli päättyy 
+	* Päätepiste: portti/ovi/joku muu -> peli päättyy [Luotu, peli ei vielä pääty ovelle päästessä]
 
-	* Kerättäviä asioita [Luotu, törmäyksiä ei vielä käsitellä]
+	* Kerättäviä asioita [Tehty, osittain: törmäyksissä jotain häikkää]
 
 * Pelin voi aloittaa uudestaan, jos häviää tai voittaa 
 
