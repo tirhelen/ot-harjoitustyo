@@ -14,14 +14,17 @@ class Simon(pygame.sprite.Sprite):
         self.rect.x = 50  # pylint: disable=invalid-name
         self.rect.y = 900 # pylint: disable=invalid-name
         self.direction = 1
+        self.moving = True
         # 1 = right, 3 = left
 
     def move(self):
-        if self.direction == 1:
-            self.rect.x += 5
-            if self.rect.x == 850:
-                self.direction = 3
-        elif self.direction == 3:
-            self.rect.x -= 5
-            if self.rect.x == 20:
-                self.direction = 1
+        if self.moving:
+            if self.direction == 1:
+                self.rect.x += 5
+                if self.rect.x == 720:
+                    self.direction = 3
+            elif self.direction == 3:
+                self.rect.x -= 5
+                if self.rect.x == 20:
+                    self.direction = 1
+                

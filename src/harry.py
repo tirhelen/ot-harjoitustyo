@@ -1,5 +1,6 @@
 import os
 import pygame
+from user_events import check_keyboard_events
 
 class Harry(pygame.sprite.Sprite):
     def __init__(self, map):
@@ -21,29 +22,26 @@ class Harry(pygame.sprite.Sprite):
     def update(self):
         self.dx = 0 # pylint: disable=invalid-name
         self.dy = 0 # pylint: disable=invalid-name
-        key = pygame.key.get_pressed()
-        if key[pygame.K_LEFT]: # pylint: disable=no-member
-            self.dx -= 10
-        if key[pygame.K_RIGHT]: # pylint: disable=no-member
-            self.dx += 10
-        if key[pygame.K_SPACE] and not self.jumped: # pylint: disable=no-member
-            self.vel_y = -15
-            self.jumped = True
-        if not key[pygame.K_SPACE]: # pylint: disable=no-member
-            self.jumped = False
-        if key[pygame.K_UP]: # pylint: disable=no-member
-            if self.check_door_collision(self.map):
-                print("Jee")
+
+        check_keyboard_events(self)
 
         self.vel_y += 1
         if self.vel_y > 10:
             self.vel_y = 10
-        self.check = 0
+        
         self.dy += self.vel_y
         self.wall_collisions(self.map)
         self.object_collisions(self.map)
         self.rect.x += self.dx
         self.rect.y += self.dy
+
+    def move_right(self):
+        self.dx += 10
+    def move_left(self):
+        self.dx -= 10
+    def jump(self):
+        self.vel_y = -15
+        self.jumped = True
 
     def wall_collisions(self, map):
         for tile in map.tiles:
@@ -61,11 +59,15 @@ class Harry(pygame.sprite.Sprite):
     def object_collisions(self, map):
         self.check_backpack(map)
         #collides with boas
-        #jostain syystä ilmeisesti lukee törmäyksiksi myös, jos harry on x-suunnassa samassa kohtaa
-        #mutta y-suunnassa huivin/huivien alapuolella
-        collided = pygame.sprite.spritecollide(self, map.boa_group, True, collided = None)
-        for boa in collided:
-            self.backpack.append(boa)
+        for boa in map.boa_group:
+            # checking if boa collides from right
+            if self.rect.x + self.width == boa.rect.x and self.rect.y == boa.rect.y:
+                   self.backpack.append(boa)
+                   map.boa_group.remove(boa)
+            # checking if boa collides from left
+            elif self.rect.x == boa.rect.x + boa.image.get_width() and self.rect.y == boa.rect.y:
+                self.backpack.append(boa)
+                map.boa_group.remove(boa)
 
         #collides with simon
         if self.rect.colliderect(map.simon.rect):
@@ -74,10 +76,7 @@ class Harry(pygame.sprite.Sprite):
                         door.rect.x = map.door_x
                     elif door.name == "opendoor.png":
                         door.rect.x = 1100
-            if len(self.backpack) <= 0:
-                self.game_over = True
-            else:
-                for boa in self.backpack:
+            for boa in self.backpack:
                     map.boa_group.add(boa)
                     self.backpack.remove(boa)
 
