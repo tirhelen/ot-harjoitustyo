@@ -1,9 +1,9 @@
-#Käyttöohje
+# Käyttöohje
  
 Lataa ohjelman lähdekoodi viimeisimmästä releasesta. 
 Saat koodin ladattua "Assets"-otsikon alta valitsemalla "Source code" haluamallasi tiedostotyypillä (zip tai tar.gz)
  
-##Käynnistäminen:
+## Käynnistäminen:
  
 Asenna ensin riippuvuudet komennolla:
 > poetry install
@@ -11,14 +11,14 @@ Asenna ensin riippuvuudet komennolla:
 Ohjelma käynnistyy komennolla:
 > poetry run invoke start
 
-##Ohjelma:
+## Ohjelma:
  
 Ohjelma aukeaa menuvalikkoon, josta pääset peliin tai ohjeisiin valikon nappeja painamalla.
 Ohjelman voi sulkea joko ESC-näppäimen avulla tai ohjelmaruudun yläreunassa olevasta x:stä.
 Tietokoneesi resoluutiosta riippuen käynnistysruutu ei saata näkyä ohjelmaruudussa kokonaan. Voit säätää ohjelmaruudun kokoa vetämällä ohjelmaruudun reunaa siihen suuntaan, jossa näkymää "katkeaa". 
  
 
-##Pelaaminen:
+## Pelaaminen:
 Tarkoituksenasi on kerätä kolme pelikentällä olevaa huivia.
 Ne kerättyäsi sinun tulee loikkia ovelle, joka on nyt auennut.
 Aukinaisen oven kohdalla ollessasi pääset pelin läpi, kun painat nuolinäppäintä ylös.
