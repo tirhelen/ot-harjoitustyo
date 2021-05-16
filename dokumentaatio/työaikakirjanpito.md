@@ -18,5 +18,5 @@
 |9.5   |1    |Gameloop-luokka, restart- ja menu-nappulat               |
 |13.5. |1    |Restart kuntoon                                          |
 |15.5. |3,5  |Menu-valikko, ohjenäkymä                                 |
-
-|yht.  |27   |                                                         |
+|16.5. |3    |Dokumentaatiota, koodin siistintää                       |
+|yht.  |30   |                                                         |
