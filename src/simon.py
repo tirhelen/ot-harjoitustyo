@@ -5,8 +5,7 @@ import pygame
 class Simon(pygame.sprite.Sprite):
     """Class for the enemy in the game"""
     def __init__(self):
-        """constructor for the enemy
-        """
+        """constructor for the enemy, Simon"""
         super().__init__()
         dirname = os.path.dirname(__file__)
         self.image = pygame.image.load(os.path.join(dirname, "assets", "Simon.png"))
@@ -20,8 +19,7 @@ class Simon(pygame.sprite.Sprite):
         self.moving = True
 
     def move(self):
-        """moves the enemy
-        """
+        """moves the enemy"""
         if self.moving:
             if self.direction == 1:
                 self.rect.x += 5

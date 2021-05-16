@@ -1,12 +1,15 @@
 import os
 import pygame
 class Button(pygame.sprite.Sprite):
-    """class for buttons
-
-    Args:
-        pygame (sprite):
-    """
+    """class for buttons"""
     def __init__(self, name, X, Y):
+        """constructor for buttons
+
+        Args:
+            name (string): name of the file that has the button image
+            X (int): x coordinate for button placement
+            Y (int): y coordinate for button placement
+        """
         super().__init__()
         dirname = os.path.dirname(__file__)
         self.name = name
@@ -17,5 +20,9 @@ class Button(pygame.sprite.Sprite):
         self.clicked = False
 
     def draw(self, display):
+        """draws the button in given display
+        Args:
+            display
+        """
         display.blit(self.image, self.rect)
 

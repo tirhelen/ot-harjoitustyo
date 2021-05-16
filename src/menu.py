@@ -5,9 +5,8 @@ from tile import Tile
 
 def menu(gameloop):
     """menu screen for the game
-
     Args:
-        gameloop ([type]): [description]
+        gameloop
     """
     while gameloop.menu:
         gameloop.clock.tick(60)
@@ -41,9 +40,8 @@ def menu(gameloop):
 
 def info(gameloop):
     """shows the instructions for the game
-
     Args:
-        gameloop ([type]): [description]
+        gameloop
     """
     while gameloop.show_info:
         gameloop.clock.tick(60)

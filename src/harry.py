@@ -9,7 +9,6 @@ class Harry(pygame.sprite.Sprite):
     """
     def __init__(self, map):
         """constructor for Harry
-
         Args:
             map (map): the map for the playable level
         """
@@ -18,7 +17,6 @@ class Harry(pygame.sprite.Sprite):
 
     def reset(self,map):
         """resets Harry in starting condition
-
         Args:
             map (map): the map for the playable level
         """
@@ -37,8 +35,7 @@ class Harry(pygame.sprite.Sprite):
         self.game_over = False
 
     def update(self):
-        """updates Harry's position
-        """
+        """updates Harry's position"""
         self.dx = 0 # pylint: disable=invalid-name
         self.dy = 0 # pylint: disable=invalid-name
 

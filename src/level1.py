@@ -5,13 +5,12 @@ from simon import Simon # pylint: disable=import-error
 from tile import Tile # pylint: disable=import-error
 
 class Map:
-    """class for level / map
-    """
+    """class for level / map"""
     def __init__(self, filename):
         """constructor for the map
 
         Args:
-            filename ([string]): name of the csv file that has information about the map tiles
+            filename (string): name of the csv file that has information about the map tiles
         """
         self.filename = filename
         self.tile_size = 50
@@ -24,8 +23,8 @@ class Map:
         """draws tiles in the screen
 
         Args:
-            tile_list ([type]): [description]
-            screen ([type]): [description]
+            tile_list (list): list of the tiles created in load_tiles
+            screen (display): the display in which the tiles will be drawn
         """
         for tile in tile_list:
             screen.blit(tile.image, (tile.rect.x, tile.rect.y))
@@ -34,7 +33,7 @@ class Map:
         """reads the csv file and creates list of tile numbers
 
         Returns:
-            [list]: [list of tile numbers]
+            map [list]: list of tile numbers
         """
         map = []
         dirname = os.path.dirname(__file__)
@@ -45,8 +44,7 @@ class Map:
         return map
 
     def load_tiles(self):
-        """creates list of tiles based on their tile number in map list
-        """
+        """creates list of tiles based on their tile number in map list"""
         self.tiles = []
         map = self.read_csv()
         for i in range(len(map)):

@@ -6,7 +6,7 @@ from gameloop import Gameloop
 from menu import menu
 
 def main():
-
+    """creates initializes the program"""
     pygame.init() # pylint: disable=no-member
     clock = pygame.time.Clock()
     display = Display(1050,1050,"Harryn huivit häveyksissä")
@@ -16,5 +16,4 @@ def main():
     gameloop = Gameloop(display, level, harry, clock)
     menu(gameloop)
 
-if __name__ == "__main__":
-    main()
+main()
