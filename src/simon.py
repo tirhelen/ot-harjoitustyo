@@ -3,7 +3,10 @@ import pygame
 
 
 class Simon(pygame.sprite.Sprite):
+    """Class for the enemy in the game"""
     def __init__(self):
+        """constructor for the enemy
+        """
         super().__init__()
         dirname = os.path.dirname(__file__)
         self.image = pygame.image.load(os.path.join(dirname, "assets", "Simon.png"))
@@ -11,13 +14,14 @@ class Simon(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.width = self.image.get_width()
         self.height = self.image.get_height()
-        self.rect.x = 50  # pylint: disable=invalid-name
-        self.rect.y = 900 # pylint: disable=invalid-name
-        self.direction = 1
+        self.rect.x = 50
+        self.rect.y = 900
+        self.direction = 1 # 1 = right, 3 = left
         self.moving = True
-        # 1 = right, 3 = left
 
     def move(self):
+        """moves the enemy
+        """
         if self.moving:
             if self.direction == 1:
                 self.rect.x += 5
@@ -27,4 +31,3 @@ class Simon(pygame.sprite.Sprite):
                 self.rect.x -= 5
                 if self.rect.x == 20:
                     self.direction = 1
-                

@@ -8,8 +8,8 @@ class Tile(pygame.sprite.Sprite):
         self.name = name
         self.image = pygame.image.load(os.path.join(dirname, "assets", self.name))
         self.rect = self.image.get_rect()
-        self.rect.x = X # pylint: disable=invalid-name
-        self.rect.y = Y # pylint: disable=invalid-name
+        self.rect.x = X
+        self.rect.y = Y
 
-    def scaling(self, height, width):
-        self.image = pygame.transform.scale(self.image, (height, width))
+    def scaling(self, width, height):
+        self.image = pygame.transform.scale(self.image, (width, height))

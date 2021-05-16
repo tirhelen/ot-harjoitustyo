@@ -2,8 +2,6 @@ import pygame
 from harry import Harry
 from level1 import Map
 from display import Display
-from button import Button
-from text import Text
 from gameloop import Gameloop
 from menu import menu
 

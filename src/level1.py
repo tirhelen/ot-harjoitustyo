@@ -5,19 +5,37 @@ from simon import Simon # pylint: disable=import-error
 from tile import Tile # pylint: disable=import-error
 
 class Map:
+    """class for level / map
+    """
     def __init__(self, filename):
+        """constructor for the map
+
+        Args:
+            filename ([string]): name of the csv file that has information about the map tiles
+        """
         self.filename = filename
         self.tile_size = 50
-        self.start_x, self.start_y = 0,0 
+        self.start_x, self.start_y = 0,0
         self.boa_group = pygame.sprite.Group()
         self.simon = Simon()
         self.door_group = pygame.sprite.Group()
 
     def draw_tiles(self, tile_list, screen):
+        """draws tiles in the screen
+
+        Args:
+            tile_list ([type]): [description]
+            screen ([type]): [description]
+        """
         for tile in tile_list:
             screen.blit(tile.image, (tile.rect.x, tile.rect.y))
 
     def read_csv(self):
+        """reads the csv file and creates list of tile numbers
+
+        Returns:
+            [list]: [list of tile numbers]
+        """
         map = []
         dirname = os.path.dirname(__file__)
         with open(os.path.join(dirname, "assets", self.filename)) as data:
@@ -27,6 +45,8 @@ class Map:
         return map
 
     def load_tiles(self):
+        """creates list of tiles based on their tile number in map list
+        """
         self.tiles = []
         map = self.read_csv()
         for i in range(len(map)):

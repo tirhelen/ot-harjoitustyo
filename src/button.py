@@ -1,6 +1,11 @@
 import os
 import pygame
 class Button(pygame.sprite.Sprite):
+    """class for buttons
+
+    Args:
+        pygame (sprite):
+    """
     def __init__(self, name, X, Y):
         super().__init__()
         dirname = os.path.dirname(__file__)

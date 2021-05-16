@@ -1,10 +1,20 @@
+import sys
 import pygame
 from text import Text
-import sys
 from user_events import check_mouse_events
 from menu import menu
 class Gameloop:
+    """class for the gameloop
+    """
     def __init__(self, display, level, harry, clock):
+        """constructor for the gameloop
+
+        Args:
+            display ([type]): [description]
+            level ([type]): [description]
+            harry ([type]): [description]
+            clock ([type]): [description]
+        """
         self.display = display
         self.level = level
         self.harry = harry
@@ -14,6 +24,8 @@ class Gameloop:
         self.show_info = False
 
     def start(self):
+        """starts the game and keeps it going
+        """
         self.level.load_tiles()
 
         while self.game:
@@ -35,10 +47,11 @@ class Gameloop:
 
             score_text.draw_text(self.display.display)
 
-            self.display.display.blit(self.level.simon.image, (self.level.simon.rect.x, self.level.simon.rect.y))
+            self.display.display.blit(self.level.simon.image,
+                                    (self.level.simon.rect.x, self.level.simon.rect.y))
             self.display.display.blit(self.harry.image, (self.harry.rect.x, self.harry.rect.y))
             self.level.simon.move()
-        
+
             if self.harry.game_over:
                 self.level.simon.moving = False
                 for button in self.display.buttons:
