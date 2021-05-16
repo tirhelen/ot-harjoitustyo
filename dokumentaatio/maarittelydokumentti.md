@@ -2,37 +2,38 @@
  
 ## Aihe ja tarkoitus
  
-Harjoitustyöni tulee olemaan tasohyppelypeli.  
-Pelissä tarkoituksena on ohjata pelihahmoa, joka kerää esimerkiksi kolikoita tietyllä alueella, väistelee esteitä/vihollisia ja lopulta pyrkii tiettyyn paikkaan, esim. Portille/ovelle, johon kenttä päättyy. 
+Harjoitustyöni on tasohyppelypeli.
+Pelissä ohjataan Harry Stylesia, joka kerää huiveja. Samalla täytyy varoa vihollista, Simon Cowellia. Huivien keräyksen jälkeen Harry täytyy suunnata ovelle, jotta peli päättyy.
+Itse pelin lisäksi ohjelma sisältää käynnistysvalikon ja ohjenäkymä.
+  
 
-*Suunnitellut perustoiminnallisuudet:* 
+*Perustoiminnallisuudet:* 
 
 * Käynnistysvalikko: “ohjeet”-nappi, josta aukeaa ohjeet pelaamiseen ja “aloita peli”-nappi 
 
-* Pelihahmon liikuttaminen: oikealle, vasemmalle, hyppy, painovoima alas [TEHTY] 
+* Pelihahmon liikuttaminen: oikealle, vasemmalle, hyppy, painovoima alas
 
 * Pelikenttä:  
 
-	* tasoja, joiden päälle pelihahmo voi hypätä.  [TEHTY]
+	* tasoja, joiden päälle pelihahmo voi hypätä.
 
-	* Vihollisia / esteitä, joista pelihahmo kuolee/menettää voimia [TEHTY] 
+	* Vihollinen, joista pelihahmo menettää keräämiään esineitä: Simon Cowell
 
-	* Päätepiste: portti/ovi/joku muu -> peli päättyy [Luotu, peli ei vielä pääty ovelle päästessä]
+	* Päätepiste: ovi, josta peli päättyy, kun kaikki huivit on kerätty
 
-	* Kerättäviä asioita [Tehty, osittain: törmäyksissä jotain häikkää]
+	* Kerättäviä asioita: huivit
 
-* Pelin voi aloittaa uudestaan, jos häviää tai voittaa 
-
-	* Tai siirtyä käynnistysvalikkoon 
+* Pelin voi aloittaa uudestaan tai siirtyä käynnistysvalikkoon, jos voittaa 
+ 
 
 *Jatkokehitysideoita:* 
 
 * Useampi kuin yksi kenttä: 
 
-	* Vähitellen vaikeutuvia, esim. Aikarajallisia, pidempiä/suurempia kenttiä, enemmän vihollisia... 
+	* Vähitellen vaikeutuvia, esim. aikarajallisia, pidempiä/suurempia kenttiä... 
 
-* Pelihahmon muokkaaminen, esim. Värin vaihtaminen 
+* Pelihahmon muokkaaminen, esim. Harryn asun vaihtaminen 
 
-* Pelihahmon mahdollisuus hyökätä vihollisia vastaan, esim. ampuminen 
+* Pelihahmon mahdollisuus hyökätä vihollista vastaan, esim. ampuminen 
 
-* Pelihahmon erikoisominaisuudet kerättävistä asioista, esim. Suoja vihollisia/esteitä vastaan, nopeus, korkeampi hyppy... 
+* Pelihahmon erikoisominaisuudet kerättävistä asioista, esim. suoja vihollisia/esteitä vastaan, nopeus, korkeampi hyppy... 

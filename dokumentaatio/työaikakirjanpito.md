@@ -15,4 +15,8 @@
 |26.4. |1    |Törmäysten käsittely                                     |
 |27.4. |1    |Törmäysten käsittely lähes kuntoon, oven lisäys          |
 |6.5.  |3    |Törmäykset kuntoon, nappuloiden luonti, score-näkymä     |
-|yht.  |21,5 |                                                         |
+|9.5   |1    |Gameloop-luokka, restart- ja menu-nappulat               |
+|13.5. |1    |Restart kuntoon                                          |
+|15.5. |3,5  |Menu-valikko, ohjenäkymä                                 |
+
+|yht.  |27   |                                                         |
