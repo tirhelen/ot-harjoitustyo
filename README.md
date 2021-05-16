@@ -1,15 +1,18 @@
 # Harry Styles-tasohyppely
 Pelissä ohjataan Harry Stylesiä, jonka täytyy kerätä hukkaamansa huivit ja etsiä tiensä lavan ovelle. Samalla hänen täytyy varoa Simon Cowellia.
 
-[Releaselinkki](https://github.com/tirhelen/ot-harjoitustyo/releases/tag/Viikko5)
+[Uusin release](https://github.com/tirhelen/ot-harjoitustyo/releases/tag/loppupalautus)
 
 # Dokumentaatio
+
+[Käyttöohje](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
  
 [Vaativuusmäärittely](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/maarittelydokumentti.md)
  
 [Työaikakirjanpito](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/ty%C3%B6aikakirjanpito.md)
  
-[Arkkitehtuuri](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md) 
+[Arkkitehtuuri](https://github.com/tirhelen/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
 
 # Komentorivitoiminnot
 ## Asenna riippuvuudet komennolla:
