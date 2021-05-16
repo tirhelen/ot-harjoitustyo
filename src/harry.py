@@ -5,6 +5,9 @@ from user_events import check_keyboard_events
 class Harry(pygame.sprite.Sprite):
     def __init__(self, map):
         super().__init__()
+        self.reset(map)
+    
+    def reset(self,map):
         dirname = os.path.dirname(__file__)
         self.image = pygame.image.load(os.path.join(dirname, "assets", "Harry.png"))
         self.image = pygame.transform.scale(self.image, (80, 200))
@@ -18,6 +21,7 @@ class Harry(pygame.sprite.Sprite):
         self.map = map
         self.backpack = []
         self.game_over = False
+    
 
     def update(self):
         self.dx = 0 # pylint: disable=invalid-name
