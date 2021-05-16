@@ -6,7 +6,7 @@ def start(ctx):
 
 @task
 def test(ctx):
-	ctx.run("python3 src/tests/harry_test.py")
+	ctx.run("pytest src")
 @task
 def coverage(ctx):
 	ctx.run("coverage run --branch -m pytest src")

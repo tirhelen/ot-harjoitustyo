@@ -10,7 +10,13 @@ class TestHarry(unittest.TestCase):
         self.map = Map("level1..csv")
         self.harry = Harry({self.map})
 
-    def test_harry_starts_from_right_position(self):
-        self.harry.update()
-        self.assertEqual((self.harry.rect.x), 50)
+    def test_harry_moves_to_right(self):
+        self.harry.move_right()
+        self.assertEqual((self.harry.rect.x), 60)
+        self.assertEqual((self.harry.rect.y), 50)
+
+    def test_harry_moves_to_left(self):
+        self.harry.rect.x = 100
+        self.harry.move_left()
+        self.assertEqual((self.harry.rect.x), 40)
         self.assertEqual((self.harry.rect.y), 50)
